@@ -9,25 +9,31 @@
         table {
             border-collapse: collapse;
             width: 100%;
-            display: none; 
+            display: none;
         }
-        th, td {
+
+        th,
+        td {
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
         }
+
         th {
             background-color: #f2f2f2;
         }
+
         input[type="text"] {
             margin-bottom: 10px;
             padding: 5px;
         }
+
         button {
             padding: 5px 10px;
             margin-right: 10px;
         }
-        .deleteAllBtn{
+
+        #deleteAllBtn {
             display: none;
         }
     </style>
@@ -35,21 +41,21 @@
 
 <body>
     <h1>Javascript Web Output #2</h1>
-    
-        
-        <label for="firstName">First Name: </label>
-        <input type="text" id="firstName" placeholder="First Name"><br>
-        <label for="MiddleName">Middle Name: </label>
-        <input type="text" id="middleName" placeholder="Middle Name"><br>
-        <label for="LastName">First Name: </label>
-        <input type="text" id="lastName" placeholder="Last Name"><br>
-        <label for="age">Age: </label>
-        <input type="number" id="age" placeholder="Age"><br>
-        <button onclick="insertData()">Insert</button>
-        <button onclick="clearData()">Clear</button><br><br>
 
-        <fieldset>
-            <legend style="font-size: x-large;">Records</legend>
+
+    <label for="firstName">First Name: </label>
+    <input type="text" id="firstName" placeholder="First Name"><br>
+    <label for="MiddleName">Middle Name: </label>
+    <input type="text" id="middleName" placeholder="Middle Name"><br>
+    <label for="LastName">First Name: </label>
+    <input type="text" id="lastName" placeholder="Last Name"><br>
+    <label for="age">Age: </label>
+    <input type="number" id="age" placeholder="Age"><br>
+    <button onclick="insertData()">Insert</button>
+    <button onclick="clearData()">Clear</button><br><br>
+
+    <fieldset>
+        <legend style="font-size: x-large;">Records</legend>
         <table id="userTable">
             <thead>
                 <tr>
@@ -62,9 +68,9 @@
             </thead>
             <tbody id="userTableBody"></tbody>
         </table>
-       </fieldset>
-        <button id="deleteAllBtn" onclick="deleteAll()">Delete All</button>
-    
+    </fieldset>
+    <button id="deleteAllBtn" onclick="deleteAll()">Clear Records</button>
+   
 
 
     <script src="main.js"></script>
